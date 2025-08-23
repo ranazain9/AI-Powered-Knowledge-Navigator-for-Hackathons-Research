@@ -1,8 +1,8 @@
-streamlit==1.44.0
-crewai==0.165.1
-crewai-tools==0.62.3
-python-dotenv==1.0.1
-chromadb==0.4.22
+streamlit>=1.44.0
+crewai>=0.165.1
+crewai-tools>=0.62.3
+python-dotenv>=1.1.0
+chromadb>=0.5.23
 pysqlite3-binary==0.5.3.post1
 PyPDF2==3.0.1
 PyMuPDF==1.23.8
@@ -15,3 +15,4 @@ pandas==2.2.1
 numpy==1.26.4
 requests==2.31.0
 tiktoken==0.7.0
+pip install --upgrade pip
