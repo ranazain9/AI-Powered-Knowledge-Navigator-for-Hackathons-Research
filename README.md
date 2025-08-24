@@ -20,10 +20,10 @@ API Keys for the required services (see Setup section)
 🛠️ Installation & Setup
 1. Clone the Repository
 # Clone the repository to your local machine
-git clone https://github.com/yourusername/pdf-analysis-crewai.git
+git clone https://github.com/yourusername/AI-Powered-Knowledge-Navigator-for-Hackathons-Research/
 
 # Navigate to the project directory
-cd pdf-analysis-crewai
+cd crew
 2. Create Virtual Environment (Recommended)
 # Create a virtual environment
 python -m venv venv
@@ -56,7 +56,7 @@ Note: Only AIML_API_KEY is required. Other keys are optional but enhance functio
 🚀 Running the Application
 Option 1: Direct Streamlit Run
 # Make sure your virtual environment is activated
-streamlit run streamlit_app.py
+streamlit run app.py
 Option 2: Using Python Module
 # Alternative way to run
 python -m streamlit run streamlit_app.py
@@ -66,8 +66,7 @@ streamlit run streamlit_app.py --server.runOnSave true
 🌐 Accessing the Application
 Once running, the application will be available at:
 
-Local: http://localhost:8501
-Network: http://your-ip-address:8501
+hosting : https://ai-powered-knowledge-navigator-for-hackathons-research-p63eszu.streamlit.app/ 
 The app will automatically open in your default web browser.
 
 📱 How to Use
@@ -199,3 +198,4 @@ Search existing GitHub issues
 Create a new issue with detailed information
 Include error messages and steps to reproduce
 Happy PDF Analyzing! 🚀📚🤖
+
