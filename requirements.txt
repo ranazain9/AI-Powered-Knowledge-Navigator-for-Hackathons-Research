@@ -4,5 +4,8 @@ chardet
 python-dotenv
 crewai
 crewai-tools
-chromadb==0.3.29
-
+chromadb
+gitpython==3.1.38
+PyGithub==1.59.1
+pysqlite3-binary
+linkup-sdk
