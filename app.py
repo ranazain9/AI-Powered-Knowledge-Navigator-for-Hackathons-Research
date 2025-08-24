@@ -7,7 +7,7 @@ from pathlib import Path
 import tempfile
 import time
 import chardet
-import traceback
+
 
 
 # Force Python to use pysqlite3 instead of system sqlite3
@@ -21,11 +21,6 @@ from dotenv import load_dotenv
 # Load environment variables
 _ = load_dotenv()
 
-try:
-    st.set_page_config(page_title="AI Knowledge Navigator", layout="wide")
-except Exception as e:
-    st.error(f"Startup Error: {e}")
-    st.text(traceback.format_exc())
 
 # Set environment variables for custom API endpoint
 os.environ["OPENAI_API_BASE"] = "https://api.aimlapi.com/v1"
