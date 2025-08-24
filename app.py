@@ -1,3 +1,5 @@
+import sys
+
 import streamlit as st
 import os
 import PyPDF2
@@ -5,6 +7,11 @@ from pathlib import Path
 import tempfile
 import time
 import chardet
+
+
+# Force Python to use pysqlite3 instead of system sqlite3
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import FileWriterTool, SerperDevTool, GithubSearchTool, LinkupSearchTool, EXASearchTool
@@ -1407,7 +1414,6 @@ def main():
                 
                 files_found = False
                 for folder in output_folders:
-                    
                     folder_path = Path(folder)
                     if folder_path.exists():
                         # Get all markdown files in the main folder
